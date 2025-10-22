@@ -1,0 +1,18 @@
+﻿services:
+  novahub.backend:
+    image: novahub.backend
+    build:
+      context: .
+      dockerfile: src/NovaHub.Backend/Dockerfile
+    ports:
+      - "5000:5000"
+      - "5001:5001"
+    environment:
+      ASPNETCORE_URLS: "http://+:5000;https://+:5001"
+      Kestrel__Endpoints__Http__Url: "http://+:5000"
+      Kestrel__Endpoints__Https__Url: "https://+:5001"
+      Kestrel__Endpoints__Https__Certificate__Path: "/https/aspnetapp.pfx"
+      Kestrel__Endpoints__Https__Certificate__Password: "devpass123"
+    volumes:
+      - C:\Users\pedro\certs:/https:ro
+  

@@ -1,0 +1,41 @@
+# JetBrains Rider IDE files
+.idea/
+*.sln.iml
+*.csproj.user
+*.suo
+*.user
+*.userprefs
+*.DotSettings
+
+# Rider caches and local history
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+.idea/**/contentModel.xml
+.idea/**/modules.xml
+.idea/**/httpRequests
+.idea/**/gradle.xml
+.idea/**/gradle.xml
+.idea/**/libraries
+
+# Rider generated output
+out/
+
+# Node modules
+novahub-ui/node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Build output
+/dist
+/build
